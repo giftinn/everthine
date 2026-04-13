@@ -56,7 +56,7 @@ font-family:'DM Serif Display',serif;
 margin:0 0 14px;
 }
 
-p{font-size:15px;line-height:1.7;opacity:.85}
+p{font-size:18px;line-height:1.7;opacity:.85}
 
 button{
 padding:12px 26px;
@@ -237,8 +237,8 @@ pointer-events:none;
 
 <!-- welcome -->
 <section class="card active">
-<h1>Special gift</h1>
-<p>For someone i love the most. <br>But you have to unlock it.</p>
+<h1>This is for you, adek</h1>
+<p>But you have to unlock it.</p>
 <button onclick="next()">Unlock</button>
 </section>
 
@@ -279,7 +279,7 @@ Points: <span id="score">0</span> / 3
 <!-- final -->
 <section class="card">
 
-<h1>Another Month of Us</h1>
+<h1>"Kita"</h1>
 
 <div class="lovebox">
 <div class="timer-title">TIME WITH YOU</div>
@@ -333,7 +333,7 @@ if(page===2)loadQuestion();
 ================================================= */
 
 let pinInput = '';
-const correctPin = '1402';
+const correctPin = '1331';
 const pinDisplay = document.getElementById("pin");
 
 function renderDots(){
@@ -381,9 +381,9 @@ function checkPin(){
 ================================================= */
 
 const questions=[
-{q:"When did we first meet? ", options:["14 February"," 24 January","22 January"],correct:2},
-{q:"Who loves the most?", options:["You","100% me","Both"],correct:2},
-{q:"What’s on my mind most of the time?", options:["Anime","Someone else","You (my pretty girlfriend"],correct:2}
+{q:"Kapan pertama kali kita ketemu? ", options:["September","Oktober","November"],correct:1},
+{q:"Dimana pertama kali kita ketemu?", options:["Base","Gc","Cc"],correct:1},
+{q:"Hal apa yang kita lakuin waktu pertama kali ketemu?", options:["Temenan","Dangdutan","Kenalan"],correct:1}
 ];
 
 let currentQ = 0;
@@ -448,7 +448,7 @@ function checkAnswer(i,btn){
 
 function startTimer(){
 
-    const start = new Date("2026-01-22T00:00:00");
+    const start = new Date("2026-03-24T00:00:00");
 
     setInterval(()=>{
 
@@ -482,11 +482,8 @@ function revealMemory(el){
     `;
 
     const text = `
-      Even all the beautiful words in the world still wouldn’t be enough to explain how much you mean to me. Yet here you are, right in my life, and somehow that alone says everything. I admire the little things about you—the way you care about me, the way you talk, and how your eyes light up when you’re excited, especially when it’s with me. 
-
-      With you, I’ve found a kind of peace I didn’t even know I was looking for. It’s a kind of comfort I didn’t know I needed until I found it in you. It’s something I can’t find anywhere else, no matter how hard I try. Every moment with you, no matter how small, feels important and meaningful.
-      
-      Thank you for being here with me, for every moment, every word, and every feeling we’ve shared. Happy 2nd mensiversary, sayangku. I’m so grateful for you, today and always. ❤️  
+     Sayang, dihari hubungan kita yang ke 1 bulan ini, mas mau ngucapin makasih banyak buat semuanya. Buat semua yang pernah adek kasih ke mas, waktu, kasih sayang, perhatian, ataupun segalanya yang adek kasih buat mas, mas cuma mau ngucapin makasih banyak ya sayang, maaf kalau sekiranya mas selama ini selalu nyusahin adek, atau bahkan bikin adek marah, tapi itu selalu bikin mas seneng 
+     dan bersyukur punya pacar kaya adek, semoga kita bertahan lebih lama ya sayang? Mas selalu sayang adek disini, sampai kapanpun rasa mas ke adek gak akan pernah pudar, makasih udah pilih mas sebagai pasangan adek, happy mensiversary & i love you more cantikku.
       `;
 
     const paragraphs = text.split("\n\n");
